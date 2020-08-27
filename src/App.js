@@ -59,7 +59,7 @@ function App() {
         <Title>Kommunicate Assignment</Title>
         <div>
           <Title>Search User by First or Last Name</Title>
-          <Input value={searchText} onChange={(e) => setSearchText(e.target.value)}></Input>
+          <Input type="text" onChange={(e) => setSearchText(e.target.value)}></Input>
         </div>
       </Header>
 
