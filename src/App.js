@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ModalComponent from './modalComponent';
-import UserComponent from './cardListComponent';
+import UserComponent from './UserComponent';
 import axios from 'axios';
 import styled from 'styled-components';
 

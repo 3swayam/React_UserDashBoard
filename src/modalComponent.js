@@ -23,6 +23,11 @@ function ModalComponent({ user, hideModal }) {
 border-radius: 50%;
 `;
 
+    const Button = styled.button`background-color: white;
+height: 30px;
+width: 100px;
+border-radius: 5px`;
+
     const Title = styled.p`
 left: 10.41%;
 top: 30px;
@@ -40,7 +45,7 @@ color: #282B31;
                 <Title>User Id: {user.id}</Title>
                 <Title>Name: {user.first_name} {user.last_name}</Title>
                 <Title>Email: {user.email}</Title>
-                <button onClick={() => hideModal()}>close</button>
+                <Button onClick={() => hideModal()}>Close</Button>
             </div>
         </ModalCard>
     )

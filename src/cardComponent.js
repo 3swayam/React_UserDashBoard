@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
-
 function Cards({ first_name, last_name, email, avatar, userId, showModal }) {
 
     const UserCards = styled.section`
@@ -17,11 +15,9 @@ function Cards({ first_name, last_name, email, avatar, userId, showModal }) {
     margin-bottom: 20px;
     flex-wrap: wrap;
 `;
-
     const Image = styled.img`height: 100px;
     border-radius: 50%;
 `;
-
     const Title = styled.p`
 left: 10.41%;
 top: 30px;
@@ -31,7 +27,6 @@ display: flex;
 align-items: center;
 color: #282B31;
 `;
-
 
     return (
         <UserCards onClick={() => showModal(userId)}>
