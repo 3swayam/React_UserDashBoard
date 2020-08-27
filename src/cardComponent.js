@@ -18,8 +18,8 @@ function Cards({ first_name, last_name, email, avatar, userId, showModal }) {
     flex-wrap: wrap;
 `;
 
-    const Image = styled.image`
-height: "100px", borderRadius: "50%" 
+    const Image = styled.img`height: 100px;
+    border-radius: 50%;
 `;
 
     const Title = styled.p`
@@ -44,6 +44,6 @@ color: #282B31;
     )
 }
 
-export default Cards;
+export default Cards = React.memo(Cards);
 
 

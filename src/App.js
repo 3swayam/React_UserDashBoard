@@ -18,7 +18,7 @@ function App() {
   justify-content: space-around;
   align-items:center;
   flex-wrap: wrap;
-  top: "0px"
+  top: 0px
 `;
 
   const Title = styled.p`
@@ -66,6 +66,7 @@ border-radius: 5px;
   width:  100%;
   height: 100px;
   left: 0px; 
+  bottom:0px;
   background:  #EAEDF2;
   display: flex;
   flex-direction: row;
@@ -73,7 +74,6 @@ border-radius: 5px;
   justify-content: space-around;
   align-items:center;
   flex-wrap: wrap;
-  bottom: "0px";
   display: flex;
   align-items: center;
   text-align: center;
@@ -133,7 +133,7 @@ background-color: #e3b1c5;
   }
 
   return (
-    <div>
+    <React.Fragment>
       {/* BEGINNING OF HEADER SECTION */}
       <Header>
         <Title>Kommunicate Assignment</Title>
@@ -161,7 +161,7 @@ background-color: #e3b1c5;
         ))}
       </Footer>
 
-    </div>
+    </React.Fragment>
   )
 }
 

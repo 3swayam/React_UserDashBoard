@@ -13,4 +13,4 @@ function UserComponent({ listOfUsers, showModal }) {
     )
 }
 
-export default UserComponent;
+export default UserComponent = React.memo(UserComponent);

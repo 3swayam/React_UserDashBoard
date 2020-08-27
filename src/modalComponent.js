@@ -5,16 +5,22 @@ function ModalComponent({ user, hideModal }) {
 
 
     const ModalCard = styled.section`
-position: fixed;
-z-index: 1;
-width: 50%;
-height: 50%;
-overflow: auto;
-background-color: #e3b1c5;
-box-shadow: 5px 5px 10px #e2cbcb;
+    top: 200px;
+    left: 200px;
+    position: fixed;
+    z-index: 1;
+    width: 35%;
+    height: 50%;
+    overflow: auto;
+    background-color: #d25b8b;
+    box-shadow: 5px 5px 10px #584d4d;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
-    const Image = styled.image`
-height: "100px", borderRadius: "50%" 
+    const Image = styled.img`height: 100px;
+border-radius: 50%;
 `;
 
     const Title = styled.p`
@@ -28,8 +34,9 @@ color: #282B31;
 `;
     return (
         <ModalCard>
-            <Image src={user.avatar}>  </Image>
             <div style={{ marginLeft: "20px" }}>
+                <Image src={user.avatar}></Image>
+
                 <Title>User Id: {user.id}</Title>
                 <Title>Name: {user.first_name} {user.last_name}</Title>
                 <Title>Email: {user.email}</Title>
@@ -39,4 +46,4 @@ color: #282B31;
     )
 }
 
-export default ModalComponent;
+export default ModalComponent = React.memo(ModalComponent);
